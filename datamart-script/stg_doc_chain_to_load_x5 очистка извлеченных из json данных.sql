@@ -305,7 +305,7 @@ select sq.*
 	from (
 	select ord.doc_chain_id, ord_buyer_gln, ord_supplier_gln, ord_date, ord_number
 	,a1.varcompanyname supplier_name, g1.varcityregexp supplier_city, c.region_name
-	,ord_delivery_date, ord_latest_delivery_date, g2.varname ord_deliv_place, ord_doctype, ord_type, ord_amount_order_calc
+	,ord_delivery_date, ord_latest_delivery_date, g2.varname ord_deliv_place, ord.ord_deliv_place ord_deliv_place_gln, ord_doctype, ord_type, ord_amount_order_calc
 	,rsp.ordrsp_date, rsp.ordrsp_action, rsp.ord_amount_ordrsp_calc
 	,des.desadv_delivery_date, des.desadv_doctype, des.ord_amount_desadv_calc
 	,rec.recadv_doctype, rec.recadv_reception_date, rec.ord_amount_recadv_calc
